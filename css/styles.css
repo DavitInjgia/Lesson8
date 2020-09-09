@@ -1,0 +1,94 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	padding: 2%;
+}
+
+.box1{
+	width: 100%;
+	height: 100%;
+	background-color: green;
+	position: relative;
+}
+.box1_p{
+	position: absolute;
+	color: yellow;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Myriad Pro';
+	right: 13px;
+	bottom: 13px;
+}
+
+.navigation{
+	position: absolute;
+	top: 37px;
+	left: 37px;
+}
+.nav-li{
+	display: inline-block;
+	margin-right: 57px;
+}
+.nav-a{
+	color: white;
+	text-transform: uppercase;
+	font-size: 48px;
+	font-family: 'Myriad Pro';
+}
+.arrow{
+	position: absolute;
+	right: 37px;
+	top: 37px;
+}
+.box2{
+	width: 620px;
+	height: 450px;
+	background-color: white;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.box2_p{
+	position: absolute;
+	font-size: 14px;
+	color: #39B54A;
+	font-family: 'Myriad Pro';
+	bottom: 0;
+	right: 0;
+	text-transform: uppercase;
+	transition: all 2s linear 0.3s;
+}
+.box3{
+	width: 300px;
+	height: 300px;
+	background-color: green;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition: all 1s linear 0.5s;
+}
+.box3 p{
+	position: absolute;
+	color: yellow;
+	font-size: 39px;
+	font-family: 'Myriad Pro';
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%)  rotate(45deg);
+	white-space: nowrap;
+	transition: all 2s linear 0.3s;
+}
+.box2:hover .box3{
+	background-color: yellow;
+}
+.box2:hover .box3 p{
+	color: #C1272D;
+	transform: translate(-50%,-50%)  rotate(0deg);
+}
+.box2:hover .box2_p{
+	right: 85px;
+}
+
